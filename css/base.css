@@ -11,11 +11,11 @@
 body {
 	margin: 0;
 	--color-text: #fff;
-	--color-bg: #000;
+	--color-bg: #071a52;
 	--color-link: #ffffff;
 	--color-link-hover: #3eaaf1;
 	--color-alt: #3ba2e5;
-	--color-info: #e93f3b;
+	--color-info: #423131;
 	color: var(--color-text);
 	background-color: var(--color-bg);
 	font-family: 'Roboto', sans-serif;
@@ -205,11 +205,7 @@ canvas {
 	.frame__title {
 		margin: 0 8vw 0 0;
 	}
-	.frame__demos {
-		margin: 0;
-		grid-area: demos;
-		justify-self: end;
-	}
+	
 	.frame__links a {
 		display: inline-block;
 	}

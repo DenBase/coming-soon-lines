@@ -14,6 +14,8 @@ class App {
     this.renderer = new THREE.WebGLRenderer({
       antialias: false
     });
+    // для изменения цвета добавляем тут эту строку
+    this.renderer.setClearColor (options.colors.backgroundCanvas);
     this.renderer.setSize(container.offsetWidth, container.offsetHeight, false);
     this.renderer.setPixelRatio(window.devicePixelRatio);
     this.composer = new POSTPROCESSING.EffectComposer(this.renderer);
@@ -33,7 +35,7 @@ class App {
 
     let fog = new THREE.Fog(
       options.colors.background,
-      options.length * 0.2,
+      options.length * 0.,
       options.length * 500
     );
     this.scene.fog = fog;
